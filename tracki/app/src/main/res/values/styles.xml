@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Other theme attributes -->
+
+        <!-- Change the text color of the TabLayout -->
+        <item name="android:textColorPrimary">@color/hint</item>
+        <!-- Optionally, change the selected tab text color -->
+        <item name="colorPrimaryDark">@color/accent</item>
+        <item name="background">@color/black</item>
+    </style>
+
+
+</resources>

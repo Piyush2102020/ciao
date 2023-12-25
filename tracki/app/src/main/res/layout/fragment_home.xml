@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <LinearLayout
+        android:layout_above="@id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainChat"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_height="match_parent"
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_above="@id/bottom"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_height="300dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginRight="4dp"
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:src="@drawable/baseline_camera_alt_24"
+            android:layout_height="wrap_content"
+            app:tint="@color/white" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/msg"
+            android:layout_marginRight="4dp"
+            android:ems="12"
+            android:hint="Type a message...."
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/send"
+            android:src="@drawable/baseline_send_24"
+            android:layout_height="wrap_content"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
